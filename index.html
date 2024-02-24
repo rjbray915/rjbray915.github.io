@@ -1,5 +1,10 @@
 <!-- <link rel="stylesheet" href="https://rjbray915.github.io/site.css"/> -->
-<link rel="stylesheet" href="site.css"/>
+<head>
+    <link rel="stylesheet" href="css/site.css"/>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <script src="js/site.js"></script>
+</head>
+
 <html>
     <head>
         
@@ -8,6 +13,18 @@
         <div class="navbar">
             <div class="navbar-item">Home</div>
             <div class="navbar-item">About</div>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <a onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="hamburger-content" id="hamburger-content">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                </ul>
+                
+            </div>
         </div>
         
         <section class="flex-section">
