@@ -4,6 +4,7 @@
     --clicked-background: white;
     --text-main-color: black;
     --text-hover-color: white;
+    --text-on-background: white;
 }
 
 html {
@@ -45,15 +46,27 @@ html {
     display: none;
     visibility: hdden;
     flex-direction: column;
+    width: 100%;
+}
+
+button.hamburger-button {
+    background: transparent;
+    border: none;
+    max-width: 50px;
+    font-size: 20px;
+    color: var(--text-on-background);
+    text-shadow: 0 0 2px black;
 }
 
 .hamburger-content {
-    display: none;
+    max-height: 0;
     flex-direction: column;
+    transition: 0.2s ease-out;
+    overflow: hidden;
+    width: 100%;
 }
 
 ul.hamburger-list {
-    list-style-type: none;
     list-style: none;
 }
 
