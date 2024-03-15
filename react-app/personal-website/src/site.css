@@ -1,0 +1,14 @@
+:root {
+    --main-color: peachpuff;
+    --hover-background: white;
+    --clicked-background: white;
+    --text-main-color: white;
+    --text-hover-color: grey;
+    --text-on-background: white;
+    --text-shadow-color: rgb(226, 161, 104);
+}
+
+html {
+    background-color: var(--main-color);
+}
+
