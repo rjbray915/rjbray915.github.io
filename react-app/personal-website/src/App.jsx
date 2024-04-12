@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Helmet from "react-helmet"
 import './App.css'
 import './site.css'
 
@@ -16,8 +17,14 @@ function App() {
 
   return (
     <>
-      
+      <Helmet>
+        <title>Robert Bray</title>
+      </Helmet>
+      <div class="left-aligned">
+        <h2>Home</h2> 
+      </div>
     </>
+      
   )
 }
 

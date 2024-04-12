@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 80%;
   padding: 2rem;
-  text-align: center;
+  margin: 0 auto auto auto;
+  text-align: left;
+}
+
+.page-body {
+  max-width: 1280px;
 }
 
 .logo {
@@ -12,7 +16,9 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  /* filter: drop-shadow(0 0 2em #646cffaa); */
+  filter: drop-shadow(0 0 2em #ea159c);
+  
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
