@@ -2,6 +2,7 @@ import Helmet from "react-helmet"
 import EmploymentBlock from "../components/EmploymentBlock.jsx"
 import EducationBlock from "../components/EducationBlock.jsx"
 import ResearchBlock from "../components/ResearchBlock.jsx"
+import "../site.css"
 
 function About() {
     return (
@@ -42,12 +43,23 @@ Teaching: Conducting lab sessions, helping students learn and understand materia
                     />
                 </div>
                 <div class="flex-col-50">
+                    <h3>Research</h3>
+                    <ResearchBlock 
+                        title="Developing a Flexible System for a Friendly Robot to Ease Dementia (FRED) Using Cloud Technologies and Software Design Patterns" 
+                        date="2023" 
+                        authors={["Robert Bray"]}
+                        publication="Master's Thesis"
+                    />
+                    <ResearchBlock 
+                        title="Development and Assessment of a Friendly Robot to Ease Dementia" 
+                        date="2022" 
+                        authors={["Robert Bray", "Luke MacDougall", "Cody Blankenship", "Kimberly Mitchell", "Fengpei Yuan", "Sylvia Cerel-Suhl", "Xiaopeng Zhao"]}
+                        publication="International Conference on Social Robotics"
+                    />
+
                     <h3>Education</h3>
                     <EducationBlock degreeLevel="M.S." major="Computer Science" year="2023" school="University of Tennessee, Knoxville"/>
                     <EducationBlock degreeLevel="B.S." major="Computer Science" year="2022" school="University of Tennessee, Knoxville"/>
-
-                    <h3>Research</h3>
-                    <ResearchBlock title="title" date="date" authors={["1", "2"]}/>
                 </div>
             </div>
         </>
