@@ -1,3 +1,5 @@
+import Collapsible from "./Collapsible.jsx"
+
 function EmploymentBlock({title, company, timePeriod, description}) {
     return (
         <>
@@ -8,7 +10,10 @@ function EmploymentBlock({title, company, timePeriod, description}) {
                 <br/>
                 {timePeriod}
                 <br/>
-                {description}
+                <Collapsible>
+                    <div>Description</div>
+                    <p>{description}</p>
+                </Collapsible>
             </p> 
         </>
     )

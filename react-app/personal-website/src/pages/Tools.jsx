@@ -13,8 +13,7 @@ function Tools() {
             <h2>Tools</h2>
             <Container>
                 <Row>
-                    <Col>1 of 2</Col>
-                    <Col>2 of 2</Col>
+                    <Col>Coming soon! Here will be the web tools that I'm working on.</Col>
                 </Row>
             </Container>
         </>

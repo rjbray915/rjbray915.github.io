@@ -2,7 +2,7 @@ import Helmet from "react-helmet"
 import EmploymentBlock from "../components/EmploymentBlock.jsx"
 import EducationBlock from "../components/EducationBlock.jsx"
 import ResearchBlock from "../components/ResearchBlock.jsx"
-import "../site.css"
+import Collapsible from "../components/Collapsible.jsx"
 
 function About() {
     return (
@@ -19,13 +19,13 @@ function About() {
                         title="AI/ML Engineer" 
                         company="Addiguru" 
                         timePeriod="Jan 2024 - Present"
-                        description=""
+                        description="Coming soon!"
                     />
                     <EmploymentBlock 
                         title="Artificial Intelligence Intern" 
                         company="Addiguru" 
                         timePeriod="May 2023 - Dec 2023"
-                        description=""
+                        description="Coming soon!"
                     />
                     <EmploymentBlock 
                         title="Graduate Teaching / Research Assistant" 

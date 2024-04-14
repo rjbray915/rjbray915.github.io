@@ -7,7 +7,7 @@ import Tools from "./pages/Tools.jsx"
 import Contact from "./pages/Contact.jsx"
 import NotFound from './pages/NotFound.jsx'
 import './index.css'
-import "./site.css"
+import './other_css/font-awesome-4.7.0/css/font-awesome.min.css'
 import {HashRouter, Route, Routes} from "react-router-dom"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -15,10 +15,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <HashRouter>
       <Routes>
           <Route path="/" element={<Layout/>}>
-            <Route index element={<App/>}/>
+            <Route index element={<About/>}/>
             <Route path="about" element={<About/>}/>
             <Route path="tools" element={<Tools/>}/>
-            <Route path="contact" element={<Contact/>}/>
+            {/* <Route path="contact" element={<Contact/>}/> */}
             <Route path="*" element={<NotFound/>}/>
           </Route>
       </Routes>
