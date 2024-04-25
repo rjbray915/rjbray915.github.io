@@ -45,7 +45,6 @@ button.hamburger-button {
     font-size: 25px;
     padding: 0;
     color: var(--text-on-background);
-    text-shadow: 0 0 2px black;
 }
 
 .hamburger-content {
@@ -75,7 +74,7 @@ ul.hamburger-list li {
 }
 
 .fa:hover {
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 5px var(--color-secondary);
     color: var(--highlight-color);
 }
 
