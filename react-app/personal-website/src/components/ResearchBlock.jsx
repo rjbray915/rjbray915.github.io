@@ -2,8 +2,6 @@ function ResearchBlock({title, date, authors, publication}) {
     const authors_elements = authors.map((author,  index) => {
         if(index == 0)
             return <span>{author}</span>
-        else if(index == authors.length-1)
-            return <span> {author}</span>
         else
             return <span>, {author}</span>;
         
