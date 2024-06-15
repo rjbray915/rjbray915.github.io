@@ -9,7 +9,13 @@ function Tools() {
                 <meta name="description" content="Tools I'm currently working on."/>
             </Helmet>
             <h2>Tools</h2>
-            <Link to="number-converter">Number Converter</Link>
+            <div>
+                <Link to="number-converter">Number Converter</Link>
+            </div>
+            <div>
+                <Link to="calculator">Calculator</Link>
+            </div>
+            
         </>
     );
 }

@@ -3,6 +3,7 @@ import EmploymentBlock from "../components/EmploymentBlock.jsx"
 import EducationBlock from "../components/EducationBlock.jsx"
 import ResearchBlock from "../components/ResearchBlock.jsx"
 import Collapsible from "../components/Collapsible.jsx"
+import ContactForm from "./ContactForm.jsx"
 
 function About() {
     return (
@@ -11,7 +12,10 @@ function About() {
                 <title>Robert Bray | About</title>
                 <meta name="description" content="About me."/>
             </Helmet>
-            <h2>About</h2>
+            {/* <h2>About</h2> */}
+            <div>
+                <h2>Robert Bray</h2>
+            </div>
             <div class="flex-row">
                 <div class="flex-col-50">
                     <h3>Employment</h3>
@@ -19,13 +23,16 @@ function About() {
                         title="AI/ML Engineer" 
                         company="Addiguru" 
                         timePeriod="Jan 2024 - Present"
-                        description="Coming soon!"
+                        description="Developing algorithms for in-situ additive manufacturing process monitoring using computer vision and AI techniques.
+                        Designing and implementing features for .NET applications. Guiding new customers through using software in addition to troubleshooting
+                        software issues related to customer systems."
                     />
                     <EmploymentBlock 
                         title="Artificial Intelligence Intern" 
                         company="Addiguru" 
                         timePeriod="May 2023 - Dec 2023"
-                        description="Coming soon!"
+                        description="Developed algorithms for in-situ additive manufacturing process monitoring using computer vision and AI techniques.
+                        Created and annotated datasets for training deep learning segmentation and object detection models."
                     />
                     <EmploymentBlock 
                         title="Graduate Teaching / Research Assistant" 
@@ -60,6 +67,25 @@ Teaching: Conducting lab sessions, helping students learn and understand materia
                     <h3>Education</h3>
                     <EducationBlock degreeLevel="M.S." major="Computer Science" year="2023" school="University of Tennessee, Knoxville"/>
                     <EducationBlock degreeLevel="B.S." major="Computer Science" year="2022" school="University of Tennessee, Knoxville"/>
+                </div>
+            </div>
+            <hr/>
+            <div class="flex-row">
+                <div class="flex-col-50">
+                    <h3>Personal Projects</h3>
+                    <div>
+                        <b>Convert Me! (under development)</b>
+                        <p>
+                            React-based website for converting many different file types.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="flex-row">
+                <div class="flex-col-100">
+                    <h2>Contact Me</h2>
+                    <ContactForm/>
                 </div>
             </div>
         </>

@@ -50,7 +50,7 @@ function NumberConverter() {
             <meta name="description" content="Converter for number bases"/>
         </Helmet>
         <div>
-            <p>Base {base1} </p>
+            <p>Binary</p>
             <input value={num1} onInput={e => {console.log(e); setNum1(e.target.value); setNum2(convert(e.target.value, 2, 16)); setNumDec(convert(e.target.value, 2, 10))}}/>
         </div>
         <div>
@@ -58,7 +58,7 @@ function NumberConverter() {
             <input value={numDec} onInput={e => {console.log(e); setNumDec(e.target.value); setNum1(convert(e.target.value, 10, 2)); setNum2(convert(e.target.value, 10, 16))}}/>
         </div>
         <div>
-            <p>Base {base2} </p>
+            <p>Hexadecimal</p>
             <input value={num2} onInput={e => {setNum2(e.target.value); setNum1(convert(e.target.value, 16, 2)); setNumDec(convert(e.target.value, 2, 10))}}/>
         </div>
         

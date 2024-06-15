@@ -5,7 +5,7 @@ import Footer from "./Footer.jsx"
 const Layout = () => {
     return (
         <>
-            <NavBar />
+            {/* <NavBar /> */}
             <hr/>
             <Outlet />
             <hr/>
